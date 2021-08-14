@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}ML Model{% endblock title %}
+{% block content %}
+<h1>Profit Predictor using Regression Model</h1>
+<div class= "container box"> 
+    <form action="#" method="POST">
+    <p>R&D Spend : <input type="text" name="rds" required autocomplete="off" placeholder="in USD"/></p>
+    <p>Admin Spend : <input type="text" name="ads" required autocomplete="off" placeholder="in USD"/></p>
+    <p>Marketing Spend : <input type="text" name="mks" required autocomplete="off" placeholder="in USD"/></p>
+    <p class="pt">Location : <select class="dropdown" id="loc" name="loc">
+        <option class ="dropdown-item" value="NY">New York</option>
+        <option class ="dropdown-item" value="CL">California</option>
+        <option class ="dropdown-item" value="FL">Florida</option>
+    </select>
+    </p>
+    <button class="har btn btn-outline-secondary" type="submit" value="submit">Submit</button> 
+</div>
+{% endblock content %}
